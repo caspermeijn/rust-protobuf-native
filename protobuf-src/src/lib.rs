@@ -62,3 +62,13 @@ pub fn protoc() -> PathBuf {
 pub fn include() -> PathBuf {
     PathBuf::from(env!("INSTALL_DIR")).join("include")
 }
+
+pub fn conformance_test_runner() -> PathBuf {
+    PathBuf::from(env!("INSTALL_DIR"))
+        .join("bin")
+        .join("conformance-test-runner")
+}
+
+pub fn sources() -> PathBuf {
+    PathBuf::from(env!("CARGO_MANIFEST_DIR")).join("protobuf")
+}
